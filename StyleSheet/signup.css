@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #e8faff;
+}
+
+header {
+    background-color: #d0f1f7;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #d0f1f7;
+}
+
+.emergency,
+.contact-info {
+    color: #008080;
+    font-size: 14px;
+}
+.telp{
+    width:20px;
+  height:20px; 
+  border-radius:50%;
+
+}
+.tel{
+    display:flex;
+}
+.social-media {
+    display: flex;
+    gap: 10px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #32c1e9;
+}
+
+.navbar .logo img {
+    height: 50px;
+
+}
+.t{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+}
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+   contact-between: space-between;
+}
+.search{
+  width:30px;
+  height:30px; 
+  display: flex;
+  gap: 15px;
+ space-between:12px;
+ border-radius:50%;
+}
+.appointment-btn {
+    padding: 10px 20px;
+    background-color: #b3e5fc;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+  
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px 20px;
+}
+
+.form-section {
+    background-color: #c6f0fb;
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+}
+
+.form-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.social-login {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+.google-btn, .facebook-btn {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 45%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.google-btn:hover, .facebook-btn:hover {
+    background-color: #f0f0f0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.create-account-btn {
+    background-color: #2cd338;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.create-account-btn:hover {
+    background-color: #24b22f;
+}
+
+.form-section p {
+    text-align: center;
+}
+
+.form-section a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.form-section a:hover {
+    text-decoration: underline;
+}
+
+.image-section img {
+    width: 350px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #e0f7fa;
+    margin-top: 50px;
+}

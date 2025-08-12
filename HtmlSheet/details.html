@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medical History Form</title>
+  <link rel="stylesheet" href="../StyleSheet/details.css">
+</head>
+<body>
+
+  <header></header>
+    <div class="header-top">
+        <div class="emergency">
+            <div class="tel">
+                <img class="telp" src="../assets/telephone.jpeg" alt="">
+                <p>(+254) 717 783 146</p>
+            </div>
+            <p>EMERGENCY</p>
+            <div class="ic">
+            <!-- <img class="telp" src="assets/telephone.jpeg" alt=""> -->
+                <!-- <p>(+254) 717 783 146</p> -->
+            </div>
+        </div>
+        <div class="contact-info">
+            <p>swathyakiran@gmail.com</p>
+        </div>
+        <div class="social-media">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+    </div>
+    
+    <nav class="navbar">
+        <a href="#" class="logo">
+            <img class="t"  src="../assets/images/image_2.png" alt="Swasthya Kiran Logo">
+        </a>
+        <ul class="nav-links">
+            <li><a href="../HtmlSheet/home.html">Home</a></li>
+            <li><a href="../HtmlSheet/about.html">About us</a></li>
+            <li><a href="../HtmlSheet/services.html">Services</a></li>
+            <li><a href="../HtmlSheet/docter.html">Doctors</a></li>
+            <li><a href="../HtmlSheet/hospital.html">Hospitals</a></li>
+            <li><a href="../HtmlSheet/signup.html">SignUp</a></li>
+            <li><a href="../HtmlSheet/signin.html">SignIn</a></li>
+            <li><a href="../HtmlSheet/otp.html">Otp</a></li>
+            <li><a href="../HtmlSheet/details.html">Details</a></li>
+          <img class="search" src="../assets/seatch.jpeg" alt="">
+      </ul>
+      
+        <a href="#" class="appointment-btn">Appointment</a>
+    </nav>
+</header>
+
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="user-info">
+        <img src="../assets/images/ellipse_1.png" alt="User Avatar">
+        <h3>RAJ SHEKHAR</h3>
+        <p>Free Account</p>
+      </div>
+      <ul class="menu">
+        <li><a href="#">Overview</a></li>
+        <li><a href="../HtmlSheet/services.html">Services</a></li>
+        <li><a href="../HtmlSheet/docter.html">Doctors</a></li>
+        <li><a href="../HtmlSheet/hospital.html">Medical History</a></li>
+      </ul>
+      <a href="#" class="active-case-btn">Active Case</a>
+    </aside>
+
+    <!-- Main Content -->
+    <main>
+      <h2>Personal Details:</h2>
+      <form class="personal-form">
+        <div class="form-group">
+          <label for="first-name">First name</label>
+          <input type="text" id="first-name" name="first-name">
+        </div>
+        <div class="form-group">
+          <label for="last-name">Last name</label>
+          <input type="text" id="last-name" name="last-name">
+        </div>
+        <div class="form-group">
+          <label for="contact-number">Contact number</label>
+          <input type="text" id="contact-number" name="contact-number">
+        </div>
+        <div class="form-group">
+          <label for="age">Age</label>
+          <input type="number" id="age" name="age">
+        </div>
+        <div class="form-group">
+          <label for="gender">Gender</label>
+          <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="blood-group">Blood Group</label>
+          <select id="blood-group" name="blood-group">
+            <option value="A+">A+</option>
+            <option value="B+">B+</option>
+            <option value="O+">O+</option>
+            <option value="AB+">AB+</option>
+            <option value="N/A">N/A</option>
+          </select>
+        </div>
+      </form>
+
+      <h2>Medical History:</h2>
+      <form class="medical-form">
+        <div class="form-group">
+          <label for="co-existing">Co-existing Disease</label>
+          <input type="file" id="co-existing" name="co-existing">
+        </div>
+        <div class="form-group">
+          <label for="drugs-consumed">Drugs Currently Consuming</label>
+          <input type="file" id="drugs-consumed" name="drugs-consumed">
+        </div>
+        <div class="form-group">
+          <label for="drug-allergies">Drug Allergies</label>
+          <input type="file" id="drug-allergies" name="drug-allergies">
+        </div>
+        <div class="form-group address">
+          <label for="address">Address:</label>
+          <textarea id="address" name="address" rows="4"></textarea>
+        </div>
+        <button type="submit" class="register-btn">Register</button>
+      </form>
+    </main>
+  </div>
+
+  <footer>
+    <p>© 2024 Swasthya Kiran All Rights Reserved by knhs</p>
+  </footer>
+</body>
+</html>

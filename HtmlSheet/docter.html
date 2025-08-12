@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Doctors</title>
+    <link rel="stylesheet" href="../StyleSheet/docter.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="emergency">
+                <div class="tel">
+                    <img class="telp" src="../assets/telephone.jpeg" alt="">
+                    <p>(+254) 717 783 146</p>
+                </div>
+                <p>EMERGENCY</p>
+                <div class="ic">
+                <!-- <img class="telp" src="assets/telephone.jpeg" alt=""> -->
+                    <!-- <p>(+254) 717 783 146</p> -->
+                </div>
+            </div>
+            <div class="contact-info">
+                <p>swathyakiran@gmail.com</p>
+            </div>
+            <div class="social-media">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+        </div>
+        
+        <nav class="navbar">
+            <a href="#" class="logo">
+                <img class="t"  src="../assets/images/image_11.png" alt="Swasthya Kiran Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="../HtmlSheet/home.html">Home</a></li>
+                <li><a href="../HtmlSheet/about.html">About us</a></li>
+                <li><a href="../HtmlSheet/services.html">Services</a></li>
+                <li><a href="../HtmlSheet/docter.html">Doctors</a></li>
+                <li><a href="../HtmlSheet/hospital.html">Hospitals</a></li>
+                <li><a href="../HtmlSheet/signup.html">SignUp</a></li>
+                <li><a href="../HtmlSheet/signin.html">SignIn</a></li>
+                <li><a href="../HtmlSheet/otp.html">Otp</a></li>
+                <li><a href="../HtmlSheet/details.html">Details</a></li>
+              <img class="search" src="../assets/seatch.jpeg" alt="">
+          </ul>
+          
+            <a href="#" class="appointment-btn">Appointment</a>
+        </nav>
+    </header>
+
+    <div class="dashboard-container">
+        <aside>
+            <div class="rating">
+                <img class="para" src="../assets/images/doctors_talking_getty_images_1421919753.jpeg" alt="Rating">
+                <p>Rating: ⭐⭐⭐⭐⭐</p>
+            </div>
+            <ul class="side-menu">
+                <li><a href="#">Notifications</a></li>
+                <li><a href="#">Add Doctors</a></li>
+                <li><a href="#">Manage Doctors</a></li>
+            </ul>
+        </aside>
+
+        <main class="opt">
+            <section class="doctors-list">
+                <h2>List of Current Doctors</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Department</th>
+                            <th>Photograph</th>
+                            <th>Manage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Dr. Abhishek Agrawal</td>
+                            <td>Cardiology</td>
+                            <td><img src="../assets/images/download_8.jpeg" alt="Dr. Abhishek"></td>
+                            <td><button class="remove-btn" onclick="removeDoctor(this)">Remove</button></td>
+                        </tr>
+                        <tr>
+                            <td>Dr. Priyanshi Tripathi</td>
+                            <td>Dentist</td>
+                            <td><img src="../assets/images/download_10.jpeg" alt="Dr. Priyanshi"></td>
+                            <td><button class="remove-btn" onclick="removeDoctor(this)">Remove</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Swasthya Kiran All Rights Reserved by knh5</p>
+    </footer>
+
+    <script>
+        function removeDoctor(button) {
+            const row = button.parentElement.parentElement;
+            row.style.display = 'none'; // This hides the row; can be customized to actually remove the row.
+        }
+    </script>
+</body>
+</html>
